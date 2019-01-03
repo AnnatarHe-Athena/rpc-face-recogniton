@@ -1,0 +1,14 @@
+syntax = "proto3";
+package proto;
+
+service FaceRecognition {
+  rpc IsFaceBeauty(IsFaceBeautyRequest) returns (IsFaceBeautyReply) {}
+}
+
+message IsFaceBeautyRequest {
+  string src = 1;
+}
+
+message IsFaceBeautyReply {
+  bool isBeauty = 1;
+}
