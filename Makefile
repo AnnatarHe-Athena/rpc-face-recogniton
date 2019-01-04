@@ -1,6 +1,6 @@
 
 dev:
-	docker run --rm -v .:/root/ -p 51111:51111 annatarhe/face_recognition:v1.2.3 python /root/main.py
+	docker run --rm -v D:/github/douban-girls/rpc-face-recogniton:/root/ -p 51111:51111 annatarhe/face_recognition:v1.2.3 python /root/main.py
 
 .PHONY: pb
 pb:
